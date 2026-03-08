@@ -1,2 +1,3 @@
-# ReparierenStattWegwerfen
-http://reparieren-statt-wegwerfen.at/
+# Reparieren Statt Wegwerfen
+
+https://reparieren-statt-wegwerfen.at/

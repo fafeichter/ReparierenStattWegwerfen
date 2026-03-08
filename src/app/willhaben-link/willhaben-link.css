@@ -1,0 +1,8 @@
+a {
+  color: #48a2e2;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

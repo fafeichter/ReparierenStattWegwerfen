@@ -1,12 +1,15 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
+import { WillhabenBanner } from './willhaben-banner/willhaben-banner';
+import { MacbookQuote } from './macbook-quote/macbook-quote';
+import { Faq } from './faq/faq';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MatExpansionModule, MatCardModule, WillhabenBanner, MacbookQuote, Faq],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('reparieren-statt-wegwerfen');
-}
+export class App {}

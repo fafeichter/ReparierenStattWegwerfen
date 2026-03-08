@@ -1,0 +1,56 @@
+.willhaben-banner {
+  max-width: 900px;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, #f0f7f9, #e8f1f5);
+  border-radius: 12px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+  padding: 16px 24px !important;
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+.logo-container {
+  flex-shrink: 0;
+
+  .willhaben-logo {
+    height: 50px;
+  }
+}
+
+.text-container {
+  flex-grow: 1;
+
+  .headline {
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .subline {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+  }
+}
+
+.open-profile-btn {
+  background-color: #48a2e2 !important;
+  height: unset;
+  color: white !important;
+  padding: 8px 24px !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}

@@ -1,0 +1,46 @@
+.quote-divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  padding: 0 20px;
+
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+
+  .quote-content {
+    padding: 0 20px;
+    max-width: 60%;
+    text-align: center;
+  }
+
+  .quote-text {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.5;
+
+    strong {
+      font-weight: 600;
+      color: #222;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .quote-divider-container {
+    .line {
+      display: none;
+    }
+
+    .quote-content {
+      max-width: 100%;
+    }
+  }
+}
