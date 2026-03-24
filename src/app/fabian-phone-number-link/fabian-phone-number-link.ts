@@ -8,5 +8,5 @@ import { PhoneRevealDirective } from './phone-reveal.directive';
   styleUrl: './fabian-phone-number-link.css',
 })
 export class FabianPhoneNumberLink {
-  encodedPhone = 'KzQzMTIzNDU2Nzg5'; // base64
+  encodedPhone = 'KzQzIDA2NzAgMjA2NTA3Mw=='; // base64
 }
