@@ -1,26 +1,41 @@
-<a routerLink="/">Zurück</a>
+<a class="back-btn" routerLink="/">← Zurück</a>
 
-<h1>Gewerbeinhaber</h1>
-<p>Fabian Feichter<br>
-  Heinzelgasse 13, TOP A7<br>
-  9020 Klagenfurt
-</p>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>👤 Gewerbeinhaber</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      <strong>Fabian Feichter</strong><br>
+      Heinzelgasse 13, TOP A7<br>
+      9020 Klagenfurt<br>
+      Österreich
+    </p>
+    <app-fabian-email-address/>
+  </mat-card-content>
+</mat-card>
 
-<h1>Kontakt</h1>
-Telefon:
-<app-fabian-phone-number-link/>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>🏦 Bankverbindung</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Kontoinhaber:</strong> Fabian Feichter</p>
+    <p><strong>IBAN:</strong> AT06 3637 8000 0509 2895</p>
+    <p><strong>BIC:</strong> RZTIAT22378</p>
+  </mat-card-content>
+</mat-card>
 
-<h1>Bankverbindung</h1>
-<p>
-  Kontoinhaber: Feichter Fabian<br>
-  IBAN: AT06 3637 8000 0509 2895<br>
-  BIC: RZTIAT22378
-</p>
-
-<h1>Angaben zum Unternehmen</h1>
-<p>Gewerbewortlaut: Handelsgewerbe mit Ausnahme der reglementierten Handelsgewerbe und Handelsagent<br>
-  Berufszweig: Handel mit Computern und Computersystemen<br>
-  Geschäftsbezeichnung: Reparieren Statt Wegwerfen<br>
-  UID: ATU83087259<br>
-  Behörde gem. ECG (E-Commerce Gesetz): Magistrat der Stadt Klagenfurt<br>
-</p>
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>💼 Angaben zum Unternehmen</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Gewerbewortlaut:</strong> Handelsgewerbe mit Ausnahme der reglementierten Handelsgewerbe und Handelsagent
+    </p>
+    <p><strong>Berufszweig:</strong> Handel mit Computern und Computersystemen</p>
+    <p><strong>Geschäftsbezeichnung:</strong> Reparieren Statt Wegwerfen</p>
+    <p><strong>UID:</strong> ATU83087259</p>
+    <p><strong>Behörde:</strong> Magistrat der Stadt Klagenfurt</p>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,11 @@
+mat-card {
+  margin-top: 1rem;
+}
+
+.mat-mdc-card-content {
+  padding-top: 10px;
+}
+
+p {
+  padding-bottom: 0.15rem;
+}

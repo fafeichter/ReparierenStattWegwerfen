@@ -6,7 +6,7 @@ import {
   MatExpansionPanelTitle,
 } from '@angular/material/expansion';
 import { WillhabenLink } from '../willhaben-link/willhaben-link';
-import { FabianPhoneNumberLink } from '../fabian-phone-number-link/fabian-phone-number-link';
+import { FabianGithub } from '../fabian-github/fabian-github';
 
 @Component({
   selector: 'app-faq',
@@ -16,7 +16,7 @@ import { FabianPhoneNumberLink } from '../fabian-phone-number-link/fabian-phone-
     MatExpansionPanelHeader,
     MatExpansionPanelTitle,
     WillhabenLink,
-    FabianPhoneNumberLink,
+    FabianGithub,
   ],
   templateUrl: './faq.html',
   styleUrl: './faq.css',
