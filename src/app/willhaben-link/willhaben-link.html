@@ -1,3 +1,4 @@
 <a
-  href="https://www.willhaben.at/iad/shop/reparieren-statt-wegwerfen"
+  (click)="analyticsService.trackEvent(AnalyticsCategory.WILLHABEN_LINK_CLICKED, 'Willhaben Shop URL opened')"
+  [href]="urls.willhabenShop"
   target="_blank">Willhaben</a>

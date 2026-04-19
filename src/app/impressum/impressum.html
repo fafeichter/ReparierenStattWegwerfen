@@ -1,4 +1,6 @@
-<a class="back-btn" routerLink="/">← Zurück</a>
+<a (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_BACK_BUTTON_LINK_CLICKED, 'Imprint back button clicked')" class="back-btn"
+   routerLink="/">←
+  Zurück</a>
 
 <mat-card appearance="outlined">
   <mat-card-header>

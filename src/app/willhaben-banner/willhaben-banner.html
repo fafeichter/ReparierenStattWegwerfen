@@ -15,7 +15,9 @@
     </div>
 
     <div class="action-container">
-      <a class="open-profile-btn" href="https://www.willhaben.at/iad/shop/reparieren-statt-wegwerfen"
+      <a (click)="analyticsService.trackEvent(AnalyticsCategory.WILLHABEN_BUTTON_CLICKED, 'Willhaben Shop URL opened')"
+         [href]="urls.willhabenShop"
+         class="open-profile-btn"
          matButton="filled" target="_blank">
         <mat-icon>arrow_right_alt</mat-icon>
         Willhaben Shop öffnen

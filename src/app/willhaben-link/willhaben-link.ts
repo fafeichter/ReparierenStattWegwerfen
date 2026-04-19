@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { urls } from '../config/urls';
+import { AnalyticsService } from '../analytics/AnalyticsService';
+import { AnalyticsCategory } from '../config/analytics';
 
 @Component({
   selector: 'app-willhaben-link',
@@ -6,4 +9,9 @@ import { Component } from '@angular/core';
   templateUrl: './willhaben-link.html',
   styleUrl: './willhaben-link.css',
 })
-export class WillhabenLink {}
+export class WillhabenLink {
+  analyticsService: AnalyticsService = inject(AnalyticsService);
+
+  readonly urls = urls;
+  protected readonly AnalyticsCategory = AnalyticsCategory;
+}

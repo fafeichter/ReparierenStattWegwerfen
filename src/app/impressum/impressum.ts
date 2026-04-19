@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FabianEmailAddress } from '../fabian-email-address/fabian-email-address.component';
 import { RouterLink } from '@angular/router';
 import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card';
+import { AnalyticsService } from '../analytics/AnalyticsService';
+import { AnalyticsCategory } from '../config/analytics';
 
 @Component({
   selector: 'app-impressum',
@@ -9,4 +11,7 @@ import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/m
   templateUrl: './impressum.html',
   styleUrl: './impressum.css',
 })
-export class Impressum {}
+export class Impressum {
+  analyticsService: AnalyticsService = inject(AnalyticsService);
+  readonly AnalyticsCategory = AnalyticsCategory;
+}

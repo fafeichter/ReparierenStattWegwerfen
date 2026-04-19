@@ -12,4 +12,5 @@
 
 <app-willhaben-banner/>
 
-<a routerLink="impressum">Impressum</a>
+<a (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_LINK_CLICKED, 'Imprint link clicked')"
+   routerLink="impressum">Impressum</a>
