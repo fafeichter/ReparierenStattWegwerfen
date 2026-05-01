@@ -1,8 +1,10 @@
-<a (click)="analyticsService.trackEvent(AnalyticsCategory.PAYMENT_BACK_BUTTON_LINK_CLICKED, 'Payment back button clicked')" class="back-btn"
-   routerLink="/">←
+<a
+  (click)="analyticsService.trackEvent(AnalyticsCategory.PAYMENT_BACK_BUTTON_LINK_CLICKED, 'Payment back button clicked')"
+  class="back-btn"
+  routerLink="/">←
   Zurück</a>
 
-<h1>Zahlung</h1>
+<h1>Zahlung & Versand</h1>
 
 <mat-card appearance="outlined">
   <mat-card-header>
@@ -22,7 +24,22 @@
   </mat-card-header>
   <mat-card-content>
     <p><strong>Link:</strong>&nbsp;<a href="https://paypal.me/fafeichter" target="_blank">paypal.me/fafeichter</a></p>
-    <p><strong>E-Mail:</strong>&nbsp;<app-fabian-email-address/></p>
+    <p><strong>E-Mail:</strong>&nbsp;<app-fabian-email-address/>
+    </p>
     <p>Anfallende Gebühren gehen zu Lasten des Käufers!</p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>📦 Versand / Abholung</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Wir versenden nach Österreich (€ 7,57) und Deutschland (€ 18,26).</p>
+    <p>Eine persönliche Abholung ist ebenfalls möglich:
+      <a href="https://maps.app.goo.gl/dtJUdKVRsFZGGqiz8" target="_blank">
+        Klagenfurt, Heinzelgasse 13</a>
+      von Mo - So 09:00 - 22:00.
+    </p>
   </mat-card-content>
 </mat-card>
