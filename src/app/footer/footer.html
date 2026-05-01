@@ -1,0 +1,9 @@
+<div>
+  <a (click)="analyticsService.trackEvent(AnalyticsCategory.PAYMENT_LINK_CLICKED, 'Payment link clicked')"
+     routerLink="zahlung" class="no-style">Zahlung & Versand</a>
+
+  <span class="divider">|</span>
+
+  <a (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_LINK_CLICKED, 'Imprint link clicked')"
+     routerLink="impressum" class="no-style">Impressum</a>
+</div>

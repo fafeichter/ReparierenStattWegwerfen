@@ -12,10 +12,4 @@
 
 <app-willhaben-banner/>
 
-<a (click)="analyticsService.trackEvent(AnalyticsCategory.PAYMENT_LINK_CLICKED, 'Payment link clicked')"
-   routerLink="zahlung">Zahlung & Versand</a>
-
-<span class="divider">|</span>
-
-<a (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_LINK_CLICKED, 'Imprint link clicked')"
-   routerLink="impressum">Impressum</a>
+<app-footer/>

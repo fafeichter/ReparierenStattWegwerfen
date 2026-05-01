@@ -6,25 +6,14 @@
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
-      Reparieren Statt Wegwerfen ist ein Unternehmen, das sich auf die Reparatur und Wiederaufbereitung von
-      MacBooks spezialisiert hat.
+      Reparieren Statt Wegwerfen ist ein Ein-Personen-Unternehmen (EPU), das defekte MacBooks von Privatpersonen,
+      Unternehmen oder über Auktionen ankauft, repariert und aufbereitet und anschließend weiterverkauft.
     </p>
   </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{ faqTitles[1] }}
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <p>
-      Wir kaufen defekte MacBooks von Privatpersonen, Unternehmen oder über Auktionen, reparieren und bereiten sie
-      fachgerecht auf und verkaufen sie anschließend weiter.
-    </p>
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{ faqTitles[2] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
@@ -36,7 +25,7 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ faqTitles[3] }}
+        {{ faqTitles[2] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
@@ -46,17 +35,19 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ faqTitles[4] }}
+        {{ faqTitles[3] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
-      Auf alle verkauften MacBooks gewähren wir 12 Monate Gewährleistung.
+      Auf alle verkauften MacBooks gewähren wir 12 Monate Gewährleistung. Die WKO hat
+      <a [href]="urls.wkoGewaehrleistungUebersicht" target="_blank">hier</a> eine Übersicht mit allen Details
+      zusammengestellt.
     </p>
   </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ faqTitles[5] }}
+        {{ faqTitles[4] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
@@ -67,7 +58,7 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ faqTitles[6] }}
+        {{ faqTitles[5] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
@@ -78,7 +69,7 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ faqTitles[7] }}
+        {{ faqTitles[6] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
@@ -89,13 +80,13 @@
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
-        {{ faqTitles[8] }}
+        {{ faqTitles[7] }}
       </mat-panel-title>
     </mat-expansion-panel-header>
     <p>
       Das Unternehmen wurde 2026 von
       <app-fabian-github/>
-      (29) gegründet, ehemals Softwareentwickler mit zehn Jahren Berufserfahrung.
+      ({{ fabianAge }}) gegründet, ehemals Softwareentwickler mit zehn Jahren Berufserfahrung.
       Unterstützung bei strategischen Entscheidungen kommt von Stefan.
     </p>
   </mat-expansion-panel>

@@ -1,5 +1,7 @@
-<a (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_BACK_BUTTON_LINK_CLICKED, 'Imprint back button clicked')" class="back-btn"
-   routerLink="/">←
+<a
+  (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_BACK_BUTTON_LINK_CLICKED, 'Imprint back button clicked')"
+  class="back-btn"
+  routerLink="/">←
   Zurück</a>
 
 <h1>Impressum</h1>
@@ -16,17 +18,6 @@
       Österreich
     </p>
     <app-fabian-email-address/>
-  </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined">
-  <mat-card-header>
-    <mat-card-title>🏦 Bankverbindung</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <p><strong>Kontoinhaber:</strong> Fabian Feichter</p>
-    <p><strong>IBAN:</strong> AT06 3637 8000 0509 2895</p>
-    <p><strong>BIC:</strong> RZTIAT22378</p>
   </mat-card-content>
 </mat-card>
 

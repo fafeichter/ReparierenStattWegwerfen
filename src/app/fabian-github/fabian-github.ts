@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { urls } from '../config/urls';
 
 @Component({
   selector: 'app-fabian-github',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './fabian-github.html',
   styleUrl: './fabian-github.css',
 })
-export class FabianGithub {}
+export class FabianGithub {
+  readonly urls = urls;
+}

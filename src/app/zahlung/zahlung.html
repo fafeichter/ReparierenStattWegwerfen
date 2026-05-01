@@ -23,7 +23,11 @@
     <mat-card-title>🔵 PayPal</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p><strong>Link:</strong>&nbsp;<a href="https://paypal.me/fafeichter" target="_blank">paypal.me/fafeichter</a></p>
+    <p><strong>Link:</strong>&nbsp;<a
+      (click)="analyticsService.trackEvent(AnalyticsCategory.PAYPAL_ME_LINK_CLICKED, 'PayPal.me link clicked')"
+      [href]="urls.paypalMe"
+      target="_blank">paypal.me/fafeichter</a>
+    </p>
     <p><strong>E-Mail:</strong>&nbsp;<app-fabian-email-address/>
     </p>
     <p>Anfallende Gebühren gehen zu Lasten des Käufers!</p>
@@ -35,11 +39,17 @@
     <mat-card-title>📦 Versand / Abholung</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p>Wir versenden nach Österreich (€ 7,57) und Deutschland (€ 18,26).</p>
+    <p>Wir versenden CO2-neutral durch die österr. Post nach Österreich (€ 7,57) und Deutschland (€ 18,26; DHL).
+    </p>
     <p>Eine persönliche Abholung ist ebenfalls möglich:
-      <a href="https://maps.app.goo.gl/dtJUdKVRsFZGGqiz8" target="_blank">
+      <a
+        (click)="analyticsService.trackEvent(AnalyticsCategory.GOOGLE_MAPS_PICKUP_ADDRESS_LINK_CLICKED, 'Google Maps link clicked')"
+        [href]="urls.googleMapsPickupAddress" target="_blank">
         Klagenfurt, Heinzelgasse 13</a>
-      von Mo - So 09:00 - 22:00.
+      von Mo - So 09:00 - 22:00 (Fabian).
+    </p>
+    <p>
+      Bei Abholung ist zusätzlich zu den oben angegebenen Zahlungsmöglichkeiten Barzahlung möglich!
     </p>
   </mat-card-content>
 </mat-card>

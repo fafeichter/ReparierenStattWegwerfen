@@ -9,12 +9,3 @@ mat-card {
 p {
   padding-bottom: 0.15rem;
 }
-
-a {
-  color: #48a2e2;
-  font-weight: 500;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}

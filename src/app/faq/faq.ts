@@ -9,6 +9,7 @@ import { WillhabenLink } from '../willhaben-link/willhaben-link';
 import { FabianGithub } from '../fabian-github/fabian-github';
 import { AnalyticsService } from '../analytics/AnalyticsService';
 import { AnalyticsCategory } from '../config/analytics';
+import { urls } from '../config/urls';
 
 @Component({
   selector: 'app-faq',
@@ -29,7 +30,6 @@ export class Faq implements AfterViewInit {
 
   faqTitles = [
     'Was ist „Reparieren Statt Wegwerfen“?',
-    'Wie funktioniert „Reparieren Statt Wegwerfen“?',
     'Wo kann man die MacBooks kaufen?',
     'Wie viel kosten die MacBooks?',
     'Gibt es eine Garantie?',
@@ -39,7 +39,13 @@ export class Faq implements AfterViewInit {
     'Wer steckt hinter „Reparieren Statt Wegwerfen“?',
   ];
 
+  readonly fabianAge: number =
+    new Date().getFullYear() -
+    1997 -
+    (new Date() < new Date(new Date().getFullYear(), 2, 28) ? 1 : 0);
+
   analyticsService: AnalyticsService = inject(AnalyticsService);
+  protected readonly urls = urls;
 
   ngAfterViewInit(): void {
     this.panels.forEach((panel, index) => {
