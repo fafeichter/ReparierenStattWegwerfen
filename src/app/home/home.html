@@ -4,13 +4,18 @@
 
 <app-willhaben-banner/>
 
-<img alt="MacBook" src="macbook.webp"/>
+<img alt="MacBook" src="/macbook.webp"/>
 
 <app-macbook-quote/>
 
 <app-faq/>
 
 <app-willhaben-banner/>
+
+<a (click)="analyticsService.trackEvent(AnalyticsCategory.PAYMENT_LINK_CLICKED, 'Payment link clicked')"
+   routerLink="zahlung">Zahlung</a>
+
+<span class="divider">|</span>
 
 <a (click)="analyticsService.trackEvent(AnalyticsCategory.IMPRINT_LINK_CLICKED, 'Imprint link clicked')"
    routerLink="impressum">Impressum</a>

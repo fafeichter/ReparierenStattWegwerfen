@@ -1,0 +1,28 @@
+<a (click)="analyticsService.trackEvent(AnalyticsCategory.PAYMENT_BACK_BUTTON_LINK_CLICKED, 'Payment back button clicked')" class="back-btn"
+   routerLink="/">←
+  Zurück</a>
+
+<h1>Zahlung</h1>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>🏦 Bankverbindung</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Kontoinhaber:</strong> Fabian Feichter</p>
+    <p><strong>IBAN:</strong> AT06 3637 8000 0509 2895</p>
+    <p><strong>BIC:</strong> RZTIAT22378</p>
+    <img alt="QR-Code für Zahlung" src="/zahlung-qr-code.png" width="300">
+  </mat-card-content>
+</mat-card>
+
+<mat-card appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>🔵 PayPal</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Link:</strong>&nbsp;<a href="https://paypal.me/fafeichter" target="_blank">paypal.me/fafeichter</a></p>
+    <p><strong>E-Mail:</strong>&nbsp;<app-fabian-email-address/></p>
+    <p>Anfallende Gebühren gehen zu Lasten des Käufers!</p>
+  </mat-card-content>
+</mat-card>
