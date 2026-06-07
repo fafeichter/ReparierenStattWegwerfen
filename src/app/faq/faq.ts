@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, inject, QueryList, ViewChildren } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  inject,
+  QueryList,
+  ViewChildren,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import {
   MatAccordion,
   MatExpansionPanel,
@@ -22,6 +29,7 @@ import { urls } from '../config/urls';
     FabianGithub,
   ],
   templateUrl: './faq.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './faq.css',
 })
 export class Faq implements AfterViewInit {

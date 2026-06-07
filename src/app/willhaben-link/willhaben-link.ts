@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { urls } from '../config/urls';
 import { AnalyticsService } from '../analytics/AnalyticsService';
 import { AnalyticsCategory } from '../config/analytics';
@@ -7,6 +7,7 @@ import { AnalyticsCategory } from '../config/analytics';
   selector: 'app-willhaben-link',
   imports: [],
   templateUrl: './willhaben-link.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './willhaben-link.css',
 })
 export class WillhabenLink {

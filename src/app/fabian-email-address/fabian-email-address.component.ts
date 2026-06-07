@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { EmailAddressRevealDirective } from './email-address-reveal.directive';
 
 @Component({
   selector: 'app-fabian-email-address',
   imports: [EmailAddressRevealDirective],
   templateUrl: './fabian-email-address.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './fabian-email-address.component.css',
 })
 export class FabianEmailAddress {

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FabianEmailAddress } from '../fabian-email-address/fabian-email-address.component';
 import { RouterLink } from '@angular/router';
 import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card';
@@ -9,6 +9,7 @@ import { AnalyticsCategory } from '../config/analytics';
   selector: 'app-impressum',
   imports: [FabianEmailAddress, RouterLink, MatCard, MatCardHeader, MatCardTitle, MatCardContent],
   templateUrl: './impressum.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './impressum.css',
 })
 export class Impressum {

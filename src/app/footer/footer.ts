@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { AnalyticsService } from '../analytics/AnalyticsService';
 import { AnalyticsCategory } from '../config/analytics';
 import { RouterLink } from '@angular/router';
@@ -7,6 +7,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-footer',
   imports: [RouterLink],
   templateUrl: './footer.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './footer.css',
 })
 export class Footer {

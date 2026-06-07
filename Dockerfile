@@ -1,5 +1,5 @@
 # ---------- Build stage ----------
-FROM node:25-alpine AS builder
+FROM node:26-alpine AS builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ RUN npm run build
 
 
 # ---------- Runtime stage ----------
-FROM nginx:1.29-alpine
+FROM nginx:1.31-alpine
 
 # Remove default nginx site
 RUN rm -rf /usr/share/nginx/html/*
