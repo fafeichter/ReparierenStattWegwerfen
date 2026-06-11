@@ -34,22 +34,33 @@
   </mat-card-content>
 </mat-card>
 
-<mat-card appearance="outlined">
+<mat-card appearance="outlined" class="text-justify">
   <mat-card-header>
     <mat-card-title>📦 Versand / Abholung</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p>Wir versenden CO2-neutral durch die österr. Post nach Österreich (€ 7,57) und Deutschland (€ 18,26; DHL).
-    </p>
-    <p>Eine persönliche Abholung ist ebenfalls möglich:
-      <a
-        (click)="analyticsService.trackEvent(AnalyticsCategory.GOOGLE_MAPS_PICKUP_ADDRESS_LINK_CLICKED, 'Google Maps link clicked')"
-        [href]="urls.googleMapsPickupAddress" target="_blank">
-        Klagenfurt, Heinzelgasse 13</a>
-      von Mo - So 09:00 - 22:00 (Fabian).
-    </p>
-    <p>
-      Bei Abholung ist zusätzlich zu den oben angegebenen Zahlungsmöglichkeiten Barzahlung möglich!
-    </p>
+    <div class="mb-4">
+      Wir versenden CO2-neutral mit der Österreichischen Post innerhalb Österreichs (€ 7,57) sowie per DHL nach
+      Deutschland (€ 18,26).
+    </div>
+    <div>
+      Alternativ können Sie Ihre Bestellung persönlich abholen:
+    </div>
+    <ul>
+      <li>
+        <span class="font-bold">Abholadresse:</span>
+        <a
+          (click)="analyticsService.trackEvent(AnalyticsCategory.GOOGLE_MAPS_PICKUP_ADDRESS_LINK_CLICKED, 'Google Maps link clicked')"
+          [href]="urls.googleMapsPickupAddress" target="_blank">
+          Klagenfurt, Heinzelgasse 13</a>
+      </li>
+      <li>
+        <span class="font-bold">Abholzeiten:</span>
+        Nach Vereinbarung.
+      </li>
+    </ul>
+    <div class="mt-4">Bei Abholung ist zusätzlich zu den oben angegebenen Zahlungsmethoden auch <span
+      class="font-bold">Barzahlung</span> möglich.
+    </div>
   </mat-card-content>
 </mat-card>

@@ -41,9 +41,8 @@ export class Faq implements AfterViewInit {
     'Wo kann man die MacBooks kaufen?',
     'Wie viel kosten die MacBooks?',
     'Gibt es eine Garantie?',
-    'In welchem Zustand sind die MacBooks?',
-    'Warum von uns kaufen und nicht privat?',
-    'Warum nicht bei Refurbed und Co. kaufen?',
+    'Woher kommen die Ersatzteile?',
+    'Warum von uns kaufen ?',
     'Wer steckt hinter „Reparieren Statt Wegwerfen“?',
   ];
 
@@ -66,7 +65,7 @@ export class Faq implements AfterViewInit {
   questionOpened(question: string) {
     this.analyticsService.trackEvent(
       AnalyticsCategory.FAQ_COLLAPSABLE_OPENED,
-      '"' + question + '"' + ' collapsable opened',
+      '"' + question + '"',
     );
   }
 }
