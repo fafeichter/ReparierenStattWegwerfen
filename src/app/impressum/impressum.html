@@ -11,12 +11,17 @@
     <mat-card-title>👤 Gewerbeinhaber</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p>
-      <strong>Fabian Feichter</strong><br>
-      Heinzelgasse 13, TOP A7<br>
+    <p class="copy-btn">
+      <strong>Fabian Feichter</strong>
+      <button [cdkCopyToClipboard]="address()" class="btn-copy" mat-icon-button>
+        <mat-icon>content_copy</mat-icon>
+      </button>
+      <br>
+      Heinzelgasse 13/7<br>
       9020 Klagenfurt<br>
       Österreich
     </p>
+
     <app-fabian-email-address/>
   </mat-card-content>
 </mat-card>
