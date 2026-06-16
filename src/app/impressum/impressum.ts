@@ -1,11 +1,11 @@
-import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FabianEmailAddress } from '../fabian-email-address/fabian-email-address.component';
 import { RouterLink } from '@angular/router';
 import { MatCard, MatCardContent, MatCardHeader, MatCardTitle } from '@angular/material/card';
 import { AnalyticsService } from '../analytics/AnalyticsService';
 import { AnalyticsCategory } from '../config/analytics';
 import { MatIcon } from '@angular/material/icon';
-import { MatFabButton, MatIconButton } from '@angular/material/button';
+import { MatIconButton } from '@angular/material/button';
 import { CdkCopyToClipboard } from '@angular/cdk/clipboard';
 
 @Component({
@@ -18,7 +18,6 @@ import { CdkCopyToClipboard } from '@angular/cdk/clipboard';
     MatCardTitle,
     MatCardContent,
     MatIcon,
-    MatFabButton,
     CdkCopyToClipboard,
     MatIconButton,
   ],

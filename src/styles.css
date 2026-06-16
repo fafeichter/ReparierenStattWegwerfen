@@ -71,3 +71,8 @@ a:not(.no-style) {
     color: inherit;
   }
 }
+
+.dl-title {
+  font-weight: bold;
+  margin-right: .05rem;
+}

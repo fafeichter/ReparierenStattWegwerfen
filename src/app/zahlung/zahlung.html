@@ -11,9 +11,9 @@
     <mat-card-title>🏦 Bankverbindung</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p><strong>Kontoinhaber:</strong> Fabian Feichter</p>
-    <p><strong>IBAN:</strong> AT06 3637 8000 0509 2895</p>
-    <p><strong>BIC:</strong> RZTIAT22378</p>
+    <p><span class="dl-title">Kontoinhaber:</span> Fabian Feichter</p>
+    <p><span class="dl-title">IBAN:</span> AT06 3637 8000 0509 2895</p>
+    <p><span class="dl-title">BIC:</span> RZTIAT22378</p>
     <img alt="QR-Code für Zahlung" src="/zahlung-qr-code.png" width="300">
   </mat-card-content>
 </mat-card>
@@ -23,10 +23,13 @@
     <mat-card-title>🔵 PayPal</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p><strong>Link:</strong>&nbsp;<a
+    <p><span class="dl-title">Link:</span>
+      <a
       (click)="analyticsService.trackEvent(AnalyticsCategory.PAYPAL_ME_LINK_CLICKED, 'PayPal.me link clicked')"
       [href]="urls.paypalMe"
-      target="_blank">paypal.me/fafeichter</a>
+      target="_blank">
+        paypal.me/fafeichter
+      </a>
     </p>
     <p><strong>E-Mail:</strong>&nbsp;<app-fabian-email-address/>
     </p>
