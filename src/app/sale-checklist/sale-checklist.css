@@ -1,0 +1,114 @@
+.page-container {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #3b5f9c;
+  color: white;
+  padding: 6px 14px 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background-color: #2b4573;
+  }
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.checklist-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+  padding: 0.5rem;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  color: #666666;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+
+  mat-checkbox {
+    ::ng-deep .mdc-form-field {
+      font-size: 1.05rem;
+      color: #111111;
+    }
+  }
+}
+
+.link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 0.5rem;
+
+  .icon-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #103c7a;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: color 0.2s;
+
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: #0b2b5a;
+    }
+  }
+}
+
+.my-divider {
+  margin: 1.5rem 0 !important;
+}
+
+.info-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #777777;
+  font-size: 0.95rem;
+
+  mat-icon {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+    color: #888888;
+  }
+}

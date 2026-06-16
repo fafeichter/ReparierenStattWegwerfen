@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Impressum } from './impressum/impressum';
 import { Home } from './home/home';
 import { Zahlung } from './zahlung/zahlung';
+import { SaleChecklist } from './sale-checklist/sale-checklist';
 
 export const routes: Routes = [
   {
@@ -15,5 +16,9 @@ export const routes: Routes = [
   {
     path: 'zahlung',
     component: Zahlung,
+  },
+  {
+    path: 'checklist',
+    component: SaleChecklist,
   },
 ];
