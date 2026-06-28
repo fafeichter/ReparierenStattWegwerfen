@@ -29,7 +29,16 @@ export class Impressum {
   analyticsService: AnalyticsService = inject(AnalyticsService);
   readonly AnalyticsCategory = AnalyticsCategory;
 
+  encodedEmail = 'ZmFiaWFuQHJlcGFyaWVyZW4tc3RhdHQtd2Vnd2VyZmVuLmF0'; // Base64
+
   protected address() {
-    return 'Fabian Feichter\n' + 'Heinzelgasse 13/7\n' + '9020 Klagenfurt\n' + 'Österreich';
+    return (
+      'Fabian Feichter\n' +
+      'Heinzelgasse 13/7\n' +
+      '9020 Klagenfurt\n' +
+      'Österreich\n\n' +
+      'E-Mail: ' +
+      atob(this.encodedEmail)
+    );
   }
 }
