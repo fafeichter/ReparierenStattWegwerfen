@@ -1,10 +1,10 @@
 import {
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   inject,
   QueryList,
   ViewChildren,
-  ChangeDetectionStrategy,
 } from '@angular/core';
 import {
   MatAccordion,
@@ -38,8 +38,8 @@ export class Faq implements AfterViewInit {
 
   faqTitles = [
     'Was ist „Reparieren Statt Wegwerfen“?',
-    'Wo kann man die MacBooks kaufen?',
-    'Wie viel kosten die MacBooks?',
+    'Wo kann man die MacBooks und iPads kaufen?',
+    'Wie viel kosten die MacBooks und iPads?',
     'Gibt es eine Garantie?',
     'Woher kommen die Ersatzteile?',
     'Warum von uns kaufen ?',
