@@ -3,4 +3,6 @@
 
 # Reparieren Statt Wegwerfen
 
+Official website of my company "Reparieren Statt Wegwerfen".
+
 https://reparieren-statt-wegwerfen.at/
